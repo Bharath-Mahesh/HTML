@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+    body{
+      background-color: black;
+    }
+    .red-box{
+      background-color:rgb(206, 17, 38);
+      height: 500px;
+      width: 1000px;
+      position: absolute;
+      border: 10px solid white;
+    }
+    
+
+    .blue-box{
+      background-color: rgb(0, 40, 104);
+      height: 250px;
+      width: 1000px;
+      position: relative;
+      top: -125px;
+    }
+
+     .white-circle{
+      background-color: white;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      position: relative;
+      top: 20px;
+      left: 400px; 
+      
+     } 
+
+     .red-box > p{
+      color: #ffffff;
+      font-size: 5rem;
+      position: relative;
+      top: -60px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+      .white-circle p {
+        font-size: 3rem;
+        position: relative;
+        top: 35px;
+        text-align: center;
+        font-weight: bold;
+        
+      }
+  
+  </style>
+</head>
+
+<body>
+  <div class="red-box">
+    <p>the flag</p>
+    <div class="blue-box">
+      <div class="white-circle">
+        <p>of<br>LAOS</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
